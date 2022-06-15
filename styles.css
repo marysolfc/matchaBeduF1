@@ -28,12 +28,10 @@ button {
     margin-right: 20px;
     */
     font-size: 0;
+    font-family: sans-serif;
+    height: 45px;
 }
 
-li{
-    display: inline;
- }
-  
 .header > * {
     display: inline-block;
     font-size: 16px;
@@ -50,16 +48,38 @@ li{
 }
 .navbar{
     width: 70%;
-    text-align: center;
+    text-align: left;
     color: #025157;
     font-weight: 500;
 }
-
+/* Reto 4: Menu de navegacion*/
+li{
+    display: inline;
+    margin-left: 25px;
+    margin-right: 25px;
+ }
 .actions{
     width: 15%;
-    text-align: right;
+    text-align: left;
     font-size: 14px;
     font-weight: 600;
+
+}
+
+.actions > *{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.actions a {
+    color: #67b54b;
+}
+.actions button {
+    color: white;
+    background-color: #67b54b;
+    padding: 12px 14px;
+    border: 0;
+    border-radius: 5px;
 }
 .main {
     margin-top: 140px;
