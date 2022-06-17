@@ -2,14 +2,14 @@ body {
     background-color: #fffbf7;
 }
 
-h1 {
+h1, h2 {
     color:#025157;
     text-align: center;
     font-family: 'Fascinate', cursive;
 }
 
 p {
-    color: #8b8b8bcc;
+    color: #343434;
     font-family: Verdana;
     font-size: 20px;
 }
@@ -47,11 +47,16 @@ button {
 .logo > img {
     width: 15%;
 }
+.fixed-header{
+    position: fixed;
+    top: 0;
+    background-color: #fffbf7;
+}
 .navbar{
     width: 70%;
     text-align: left;
     color: #025157;
-    font-weight: 500;
+    font-weight: 500;    
 }
 /* Reto 4: Menu de navegacion*/
 li{
@@ -85,4 +90,49 @@ li{
 .main {
     margin-top: 140px;
     text-align: center;
+  }
+
+  .publish {
+    /* container styles if any */
+    margin-left: 50px;
+  }
+  
+  .publish h3 {
+    font-family: "Alegreya", serif;
+    font-size: 40px;
+    line-height: 48px;
+    color: #025157;
+  }
+  
+  .publish > p {
+    font-size: 16px;
+    color: #343434;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .publish > form {
+    display: flex;
+  }
+  
+  .publish > form p {
+    color: #025157;
+    margin-right: 18px;
+  }
+
+  .promo {
+    display: flex;
+    width: 70%;
+    margin: 100px auto;
+    align-items: center;
+  }
+  .videoflex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .videoflex img{
+    width: 50px;
+    margin-top: 20px;
   }
