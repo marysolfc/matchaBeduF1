@@ -1,30 +1,17 @@
+/*h1 {
+      color: #025157;
+}
+*/
 body {
   background-color: #fffbf7;
 }
 
-h1,
-h2 {
+h1 {
+  font-family: "Alegreya", serif;
+  font-size: 60px;
+  line-height: 48px;
   color: #025157;
-  /* color: #46484c;*/
   text-align: center;
-  font-family: 'Alegreya', serif;
-}
-
-p {
-  color: #46484c;
-  font-family: Verdana;
-  font-size: 20px;
-}
-
-h3{
-  color:#46484c;
-}
-button {
-  color: #fff;
-  background-color: #025157;
-  padding: 12px 14px;
-  border: 0;
-  border-radius: 5px;
 }
 
 img {
@@ -32,39 +19,42 @@ img {
 
 }
 
+p {
+  color: #8b8b8bcc;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+button {
+  color: #fff;
+  background-color: #025157;
+  padding: 12px 14px;
+  border-style: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .header {
-  margin: 40px 20px;
-  /*    margin-top: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
-    */
+  margin-top: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
   font-size: 0;
-  font-family: sans-serif;
   height: 45px;
+  font-family: sans-serif;
 }
 
 .header>* {
   display: inline-block;
   font-size: 16px;
-  line-height: 45px;
-  height: 100%;
   vertical-align: middle;
+  height: 100%;
+  line-height: 45px;
 }
 
 .logo {
   width: 15%;
-}
-
-.logo>img {
-  width: 15%;
-}
-
-.fixed-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  background-color: #fffbf7;
 }
 
 .navbar {
@@ -72,10 +62,10 @@ img {
   text-align: left;
   color: #025157;
   font-weight: 500;
+
 }
 
-/* Reto 4: Menu de navegacion*/
-li {
+.navbar li {
   display: inline;
   margin-left: 25px;
   margin-right: 25px;
@@ -83,32 +73,75 @@ li {
 
 .actions {
   width: 15%;
-  text-align: left;
+  text-align: right;
   font-size: 14px;
   font-weight: 600;
+}
 
+.logo>img {
+  width: 20%;
+}
+
+.banner>img {
+  width: 25%;
+}
+.main {
+  margin-top: 285px;
+  text-align: center;
+}
+.main form > *{
+margin: 10px 0;
+height: 50px;
+}
+.main form input{
+ border-radius: 5px 0 0 5px;
+ border: 1px solid #aaa;
+}
+.main form button{
+  border-radius: 0 5px 5px 0;
+  padding: 0 10px;
+}
+.actions {
+  width: 15%;
+  text-align: right;
+  font-size: 14px;
 }
 
 .actions>* {
-  margin-left: 10px;
   margin-right: 10px;
+  margin-left: 10px;
 }
 
 .actions a {
   color: #67b54b;
+  text-decoration: none;
 }
 
 .actions button {
-  color: white;
   background-color: #67b54b;
-  padding: 12px 14px;
-  border: 0;
+  padding: 5px 12px;
   border-radius: 5px;
+  font-size: 14px;
+  font-weight: 200;
 }
 
-.main {
-  margin-top: 285px;
-  text-align: center;
+/* ===== Seccion de Publish con video, promo y form ===== */
+.promo {
+  display: flex;
+  width: 70%;
+  margin: 100px auto;
+  align-items: center;
+}
+
+.video-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-flex img {
+  width: 50px;
+  margin-top: 10px;
 }
 
 .publish {
@@ -134,113 +167,115 @@ li {
   display: flex;
 }
 
+.publish form > *{
+  margin: 10px 0;
+  height: 50px;
+  }
 .publish>form p {
   color: #025157;
   margin-right: 18px;
 }
+.publish form input{
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #aaa;
+ }
+ .publish form button{
+   border-radius: 0 5px 5px 0;
+   padding: 0 10px;
+ }
 
-.promo {
-  display: flex;
-  width: 70%;
-  margin: 100px auto;
-  align-items: center;
+.fixed-header {
+  position: fixed;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fffbf7;
 }
 
-.videoflex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.videoflex img {
-  width: 50px;
-  margin-top: 20px;
-}
-
+/* ======== Section de logros con FLEX, cards, foto y descripcion  =======*/ 
 .logros {
   display: flex;
-  width: 100%;
-  margin: 100px auto;
+  justify-content: space-between;
   align-items: center;
   background-color: #a1d683;
-  justify-content: space-around;
+}
 
+.logros > article {
+  width: 100%;
+  margin: 50px 100px;
+  padding: 10px;
 }
 
 .overview {
   flex: 2;
-  padding-right: 100px;
-
 }
 
 .overview h2 {
   font-family: "Alegreya", serif;
-  font-size: 51px;
-  line-height: 61px;
+  font-size: 40px;
+  line-height: 48px;
   color: #025157;
 }
 
 .overview p {
+  font-size: 16px;
   color: #343434;
-  font-size: 18px;
   line-height: 1.5;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
-
-.overview button {
-  font-size: 14px;
-  padding: 12px 12px 6px 12px;
-  border-radius: 8px;
-  height: 45px;
-  font-weight: 600;
-  margin-left: 0;
-}
-
 .overview img {
-  width: 500px;
-  max-width: 100%;
+  width: 50%;
 }
 
-.carrusel {
+.cards {
+  flex: 1; 
+}
+
+.cards figure{
   margin-left: 50px;
 }
-
-
-
-
-
-.features {
-  display: grid;
-  background-color: #025157;
-  /*
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(2,330px);
-  
-  height: 660px;
-  grid-template-rows: repeat(2,1fr);
-  */
-  grid-template: repeat(2, 330px) / repeat(2, 1fr);
-  padding: 5% 10%;
-}
-
-.features article{
+.cards figcaption{
   background-color: #fff;
-  border-radius: 1%;
-  margin: 1%;
-  padding: 5%;
-
+  max-width: 75%;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;  
 }
-.features img{
-  max-width: 100%;
-  height: 150px;
+.cards img {
+  max-width: 75%;
+  border-radius: 5px 5px 0 0;
 }
-figcaption{
-  color: #464959;
-
-}
-figure a{
-  color: #67b54b;
-  text-decoration: none;
-  
+.cards figcaption h4 {
+  font-family: "Alegreya", serif;
+  color: #025157;
+  font-size: 14px;
 }
 
+.cards figcaption h3 {
+  color: #636363;
+  font-family: verdana;
+  font-size: 20px;
+}
+
+.cards figcaption p {
+  font-size: 16px;
+}
+.cards button {
+  width: 100%;
+
+}
+.relativo {
+ position: relative;
+}
+.relativo img:nth-of-type(2){
+  background-color: burlywood;
+  width: 80px;
+  height: 80px;
+  right: 150px;
+  bottom: -30px;
+  padding: 5px;
+  border-radius: 50px;
+  position: absolute;
+
+}
+/* fin del reto postwork sesion 3 */
