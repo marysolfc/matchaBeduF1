@@ -85,18 +85,22 @@ button {
 .banner>img {
   width: 25%;
 }
+
 .main {
   margin-top: 285px;
   text-align: center;
 }
+
 .main form > *{
 margin: 10px 0;
 height: 50px;
 }
+
 .main form input{
  border-radius: 5px 0 0 5px;
  border: 1px solid #aaa;
 }
+
 .main form button{
   border-radius: 0 5px 5px 0;
   padding: 0 10px;
@@ -112,7 +116,7 @@ height: 50px;
   margin-left: 10px;
 }
 
-.actions a {
+a {
   color: #67b54b;
   text-decoration: none;
 }
@@ -279,3 +283,31 @@ height: 50px;
 
 }
 /* fin del reto postwork sesion 3 */
+
+/* Sesión 4: reto 4 Agregando el contenido de las tarjetas Features */
+.features{
+  display: grid;
+  grid-template: repeat(2,330px)/repeat(2,1fr);
+  background-color: #025157;
+  padding: 100px 200px;
+  gap: 25px;
+}
+.features article{
+  display: flex;
+  background-color: #fff;
+  padding: 20px 40px;  
+  border-radius: 5px;
+}
+.features h3 {
+  color: #636363;
+  font-family: verdana;
+  font-size: 22px;
+}
+.features p {
+  font-size: 16px;
+  color:#636363;
+}
+.features img{
+  margin-bottom: 20px;
+}
+/* fin del reto4 sesion 4 */
