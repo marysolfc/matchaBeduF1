@@ -6,6 +6,11 @@ body {
   background-color: #fffbf7;
 }
 
+/* .main-container{
+  width: 1800px;
+  min-width: 375px;
+  margin: 0 auto;
+} */
 h1, h3 {
   font-family: "Alegreya", serif;
   color: #025157;
@@ -77,7 +82,7 @@ input[placeholder]{
 
 .navbar {
   /* width: 70%; */
-  text-align: left;
+  text-align: center;
   color: #025157;
   font-weight: 500;
 
@@ -91,7 +96,7 @@ input[placeholder]{
 
 .actions {
   /* width: 15%; */
-  text-align: right;
+  text-align: center;
   font-size: 14px;
   font-weight: 600;
 }
@@ -173,13 +178,20 @@ height: 50px;
   color: #025157;
   margin-right: 18px;
 }
-.publish form input{
+.publish>form>div{
+  height: 50px;
+  font-size: 0;
+}
+.publish > form > div> input{
   border-radius: 5px 0 0 5px;
   border: 1px solid #aaa;
+  font-size: 18px;
+  padding: 9px;
  }
- .publish form button{
+ .publish> form > div >button{
    border-radius: 0 5px 5px 0;
-   padding: 0 10px;
+   padding: 12px;
+   font-size: 18;
  }
 
 .fixed-header {
@@ -277,6 +289,7 @@ height: 50px;
   border-radius: 5px;
 }
 .features div{
+  width: 50%;
   padding: 20px 40px; 
 }
 .features h3 {
@@ -287,6 +300,9 @@ height: 50px;
 
 .features img{
   margin-bottom: 20px;
+}
+.feature-image > img{
+  width: 80%;
 }
 /* fin del reto4 sesion 4 */
 /* sesión 4: reto postwork, sección how does matcha works */
@@ -362,16 +378,27 @@ height: 50px;
     margin-top: 130px;
   }
 
+  .publish{
+    margin: 5px;    
+  }
+  
+  h3{
+    font-size: 25px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
   .publish>form {
     flex-direction: column;
   }
 
-  .publish>form>div {
-    height: 50px;
-    margin-top: 10px;
-  }
   .publish > form > div > input {
     width: 65%;
+    font-size: 14px;
+    padding: 9px;
+  }
+  .publish > form > div > button{
+    font-size: 14px;
+    padding: 10px;
   }
 
   .promo {
@@ -382,21 +409,13 @@ height: 50px;
   .video-flex > video{
     width: 100%;
   }
-
-  .publish{
-    margin: 10px 5px;
-  }
-
-  h3{
-    font-size: 25px;
-    line-height: 1;
-    margin-bottom: 15px;
-  }
-
   .features {
     grid-template: repeat(4, 1fr) / 1fr;
     padding: 10px;
    
+  }
+  .features div{
+    width: 100%;
   }
   .feature-image{
     display: none;
@@ -424,10 +443,148 @@ height: 50px;
 @media (min-width: 576px) and (max-width: 767px) {}
 
 /** dispositivos medianos (tablets) */
-@media (min-width: 768px) and (max-width: 991px) {}
+@media (min-width: 771px) and (max-width: 900px) {
+  .promo{
+    width: 90%;
+  }
+  .publish>form {
+    flex-direction: column;
+  }
 
+  .publish > form > div > input {
+    width: 45%;
+    font-size: 14px;
+    padding: 9px;
+  }
+  .publish > form > div > button{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .logros > article{    
+    margin: 10px;
+  }
+  .overview img{
+    margin-top: 10px;
+    width: 80%;
+  }
+  .logros .cards figure{
+    width: 85%;
+  }
+  .features{
+    padding: 20px;
+  }
+  .features h3{
+    font-size: 14px;
+  }
+  .features p{
+    font-size: 12px;
+  }
+  .features div:first-child{
+    width: 70%;
+  }
+  .how-does-matcha-works .cards{
+    column-gap: 20px;
+    margin: 40px 50px;
+  }
+  .how-does-matcha-works .cards p{
+    height: 150px;
+  }
+  .how-does-matcha-works .cards figcaption{
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 901px) and (max-width:1200px){
+  .promo{
+    width: 90%;
+  }
+  .publish>form {
+    flex-direction: column;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+    font-size: 14px;
+    padding: 9px;
+  }
+  .publish > form > div > button{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .logros > article{
+    padding: 5px;
+    margin: 20px 50px;
+  }
+  .overview img{
+    margin-top: 20px;
+    width: 90%;
+  }
+  .logros .cards figure{
+    width: 100%;
+  }
+  .features{
+    padding: 50px 20px;
+  }
+  .features h3{
+    font-size: 16px;
+  }
+  .features p{
+    font-size: 12px;
+  }
+  .how-does-matcha-works .cards{
+    column-gap: 20px;
+    margin: 40px 50px;
+  }
+  .how-does-matcha-works .cards p{
+    height: 150px;
+  }
+  .how-does-matcha-works .cards figcaption{
+    margin-top: 0;
+  }
+}
 /** dispositivos grandes (desktops) */
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 1201px) and (max-width: 1480px) {
+  .promo{
+    width: 90%;
+  }
+  .publish>form {
+    flex-direction: column;
+  }
+
+  .publish > form > div > input {
+    width: 65%;
+    font-size: 14px;
+    padding: 9px;
+  }
+  .publish > form > div > button{
+    font-size: 14px;
+    padding: 10px;
+  }
+  .logros > article{
+    padding: 5px;
+  }
+  .overview img{
+    margin-top: 20px;
+    width: 90%;
+  }
+  .logros .cards figure{
+    width: 100%
+  }
+  .features{
+    padding: 100px 50px;
+  }
+  .features h3{
+    font-size: 18px;
+  }
+  .features p{
+    font-size: 14px;
+  }
+  .how-does-matcha-works .cards{
+    column-gap: 20px;
+    margin: 40px 50px;
+  }
+
+}
 
 /** dispositivos extra grandes (monitores grandes, tvs) */
 @media (min-width: 1200px) {}
