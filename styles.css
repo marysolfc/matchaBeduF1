@@ -50,6 +50,10 @@ button {
   font-weight: 600;
 }
 
+input[placeholder]{
+  padding-left: 15px;
+}
+
 .header {
   margin-top: 40px;
   margin-left: 20px;
@@ -72,7 +76,7 @@ button {
 }
 
 .navbar {
-  width: 70%;
+  /* width: 70%; */
   text-align: left;
   color: #025157;
   font-weight: 500;
@@ -86,7 +90,7 @@ button {
 }
 
 .actions {
-  width: 15%;
+  /* width: 15%; */
   text-align: right;
   font-size: 14px;
   font-weight: 600;
@@ -105,11 +109,7 @@ button {
   font-weight: 200;
 }
 
-.logo>img {
-  width: 20%;
-}
-
-.banner>img {
+.logo>img, .banner > img {
   width: 25%;
 }
 
@@ -137,7 +137,7 @@ height: 50px;
   padding: 0 10px;
 }
 
-/* ===== Seccion de Publish con video, promo y form ===== */
+/* ===== Sesion 3: Seccion de Publish con video, promo y form ===== */
 .promo {
   display: flex;
   width: 70%;
@@ -191,7 +191,7 @@ height: 50px;
   background-color: #fffbf7;
 }
 
-/* ======== Section de logros con FLEX, cards, foto y descripcion  =======*/ 
+/* ======== Sesion 3, Reto postwork: Section de logros con FLEX, cards, foto y descripcion  =======*/ 
 .logros {
   display: flex;
   justify-content: space-between;
@@ -209,13 +209,6 @@ height: 50px;
   flex: 2;
 }
 
-.overview h2 {
-  font-family: "Alegreya", serif;
-  font-size: 40px;
-  line-height: 48px;
-  color: #025157;
-}
-
 .overview img {
   width: 50%;
 }
@@ -226,15 +219,15 @@ height: 50px;
 
 .logros .cards figure{
   margin-left: 50px;
+  width: 75%
 }
 .logros .cards figcaption{
   background-color: #fff;
-  max-width: 75%;
   border-radius: 0 0 10px 10px;
   padding: 20px;  
 }
 .logros .cards img {
-  max-width: 75%;
+  width: 100%;
   border-radius: 5px 5px 0 0;
 }
 .logros .cards figcaption h4 {
@@ -257,14 +250,15 @@ height: 50px;
  position: relative;
 }
 .logros .cards .relativo img:nth-of-type(2){
+  position: absolute;
   background-color: burlywood;
   width: 80px;
   height: 80px;
-  right: 150px;
+  right: 50px;
   bottom: -30px;
   padding: 5px;
   border-radius: 50px;
-  position: absolute;
+
 
 }
 /* fin del reto postwork sesion 3 */
@@ -277,7 +271,7 @@ height: 50px;
   padding: 100px 200px;
   gap: 25px;
 }
-.features article{
+.features > article{
   display: flex;
   background-color: #fff; 
   border-radius: 5px;
@@ -311,7 +305,7 @@ height: 50px;
   column-gap: 50px;
   margin: 40px 200px;
 }
-.how-does-matcha-works .cards article{
+.how-does-matcha-works .cards > article{
   background-color: #fff;
   border: 1px solid #aaa;
   border-radius: 5px;
@@ -348,3 +342,92 @@ height: 50px;
 }
 /* fin del reto Postwork de la sesion 4 */
 
+/* ======== sesion 5: responsive design ======== */
+/** dispositivos móviles en vista viewport (vertical) */
+@media (max-width: 575px) {
+
+  .navbar,
+  .actions {
+    display: none;
+  }
+  .logo > img, .main img{
+    width: 80%;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .main {
+    margin-top: 130px;
+  }
+
+  .publish>form {
+    flex-direction: column;
+  }
+
+  .publish>form>div {
+    height: 50px;
+    margin-top: 10px;
+  }
+  .publish > form > div > input {
+    width: 65%;
+  }
+
+  .promo {
+    flex-direction: column;
+    max-width: 90%;
+  }
+
+  .video-flex > video{
+    width: 100%;
+  }
+
+  .publish{
+    margin: 10px 5px;
+  }
+
+  h3{
+    font-size: 25px;
+    line-height: 1;
+    margin-bottom: 15px;
+  }
+
+  .features {
+    grid-template: repeat(4, 1fr) / 1fr;
+    padding: 10px;
+   
+  }
+  .feature-image{
+    display: none;
+  }
+ 
+  .logros{
+    flex-direction: column;    
+  }
+  .logros > article{
+    padding: 5px 20px;
+  }
+  .overview img{
+    margin-top: 20px;
+    width: 90%;
+  }
+  .how-does-matcha-works .cards{
+    grid-template-columns: 1fr;
+    row-gap: 15px;
+    margin: 10px;
+  }
+
+}
+
+/** dispositivos pequeños en vista landscape (horizontal) */
+@media (min-width: 576px) and (max-width: 767px) {}
+
+/** dispositivos medianos (tablets) */
+@media (min-width: 768px) and (max-width: 991px) {}
+
+/** dispositivos grandes (desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+/** dispositivos extra grandes (monitores grandes, tvs) */
+@media (min-width: 1200px) {}
