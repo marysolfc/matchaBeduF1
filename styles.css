@@ -217,11 +217,11 @@ height: 50px;
   padding: 10px;
 }
 
-.overview {
+.logros .overview {
   flex: 2;
 }
 
-.overview img {
+.logros .overview img {
   width: 50%;
 }
 
@@ -263,13 +263,13 @@ height: 50px;
 }
 .logros .cards .relativo img:nth-of-type(2){
   position: absolute;
-  background-color: burlywood;
+  background-color: #f9da73;
   width: 80px;
   height: 80px;
   right: 50px;
   bottom: -30px;
   padding: 5px;
-  border-radius: 50px;
+  border-radius: 50%;
 
 
 }
@@ -357,11 +357,56 @@ height: 50px;
   height: 100px;
 }
 /* fin del reto Postwork de la sesion 4 */
+/* sesion 6: trabajando con Bootstrap */
 .cards-bootstrap{
-  background-color: #67b54b;
+  background-color: #025157;
 }
 .cards-bootstrap img{
   height: 18rem;
+}
+
+.success-stories {
+  background-color: #a1d683;
+  padding: 5% 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.success-stories .overview {
+  flex: 2;
+  padding-right: 100px;
+}
+
+.success-stories .overview h2 {
+  font-family: "Alegreya", serif;
+  font-size: 51px;
+  line-height: 61px;
+  color: #025157;
+}
+
+.success-stories .overview p {
+  color: #343434;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.success-stories .overview button {
+  font-size: 14px;
+  padding: 12px 12px 6px 12px;
+  border-radius: 8px;
+  height: 45px;
+  font-weight: 600;
+  margin-left: 0;
+}
+
+.success-stories .overview img {
+  width: 500px;
+  max-width: 100%;
+}
+.carousel-inner{
+  padding-bottom: 55px;
 }
 
 /* ======== sesion 5: responsive design ======== */
@@ -436,7 +481,7 @@ height: 50px;
   .logros > article{
     padding: 5px 20px;
   }
-  .overview img{
+  .logros .overview img{
     margin-top: 20px;
     width: 90%;
   }
@@ -520,7 +565,7 @@ height: 50px;
   .logros > article{
     padding: 5px 20px;
   }
-  .overview img{
+  .logros .overview img{
     margin-top: 20px;
     width: 90%;
   }
@@ -559,7 +604,7 @@ height: 50px;
   .logros > article{    
     margin: 10px;
   }
-  .overview img{
+  .logros .overview img{
     margin-top: 10px;
     width: 80%;
   }
@@ -616,7 +661,7 @@ height: 50px;
     padding: 5px;
     margin: 20px 50px;
   }
-  .overview img{
+  .logros .overview img{
     margin-top: 20px;
     width: 90%;
   }
@@ -664,7 +709,7 @@ height: 50px;
   .logros > article{
     padding: 5px;
   }
-  .overview img{
+  .logros .overview img{
     margin-top: 20px;
     width: 90%;
   }
