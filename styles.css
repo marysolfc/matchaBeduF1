@@ -357,6 +357,12 @@ height: 50px;
   height: 100px;
 }
 /* fin del reto Postwork de la sesion 4 */
+.cards-bootstrap{
+  background-color: #67b54b;
+}
+.cards-bootstrap img{
+  height: 18rem;
+}
 
 /* ======== sesion 5: responsive design ======== */
 /** dispositivos móviles en vista viewport (vertical) */
