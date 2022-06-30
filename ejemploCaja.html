@@ -1,55 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejemplo de modelo de caja</title>
-    <style>
-h1{
-    background-color: rgb(141, 187, 230);
-    width: 300px;
-    height: 100px;
-    padding: 150px;
-    border: solid 15px rgb(240, 92, 6);
-    border-bottom-color: green;
-    margin: 100px;
-}
-.navbar {
-  width: 70%;
-  text-align: left;
-  color: #025157;
-  font-weight: 500;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo de modelo de caja</title>
+  <style>
+    h1 {
+      background-color: rgb(141, 187, 230);
+      width: 300px;
+      height: 100px;
+      padding: 150px;
+      border: solid 15px rgb(240, 92, 6);
+      border-bottom-color: green;
+      margin: 100px;
+    }
+
+    .navbar {
+      width: 70%;
+      text-align: left;
+      color: #025157;
+      font-weight: 500;
+    }
 
 
-.links-list a {
-  background-color: rgb(179,57,81);
-  color: #fff;
-  text-decoration: none;
-  padding: 1em 2em;
-display: inline-block;
-}
-.links-list a:hover {
-  background-color: rgb(66, 28, 40);
-  color: #fff;
-}
-li {
-  display: inline;
-  margin-left: 25px;
-  margin-right: 25px;
-}
+    .links-list li {
+      display: inline;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
 
-    </style>
+    .links-list a {
+      background-color: rgb(179, 57, 81);
+      color: #fff;
+      text-decoration: none;
+      padding: 1em 2em;
+      border: 1px solid #000;
+    }
+
+    .links-list a:hover {
+      background-color: rgb(66, 28, 40);
+      color: #fff;
+    }
+
+    .contenedor {
+      display: flex;
+      align-items: center;
+    }
+
+    div {
+      border: 1px solid #000;
+      width: 630px;
+      height: 430px;
+    }
+
+    .contenedor-flex{
+      border: 1px solid #000;
+      margin-bottom: 50px;
+      display: flex;
+     width: 800px;
+      height: 400px;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      
+      align-content: center;
+    
+    }
+    .contenedor-flex > *{
+      border: 1px solid saddlebrown;
+    }
+
+  </style>
 </head>
+
 <body>
+  <section class="contenedor">
     <h1>Contenido en caja</h1>
-    <nav class="navbar">
+    <div>
+      <h2>Otra caja</h2>
+    </div>
+  </section>
+  <section class="contenedor-flex">
+    <h2>1. Titulo h2</h2>
+    <p>2. Párrafo 1</p>
+    <p>3. Párrafo 2</p>
+    <h2>1. Titulo h2</h2>
+    <p>2. Párrafo 1</p>
+    <p>3. Párrafo 2</p>
+    
+  
+    
+  </section>
+  <nav class="navbar">
     <ul class="links-list">
-    <li><a href="">liga 1</a></li>
-    <li><a href="">liga 2</a></li>
-    <li><a href="">liga 3</a></li>
+      <li><a href="">liga 1</a></li>
+      <li><a href="">liga 2</a></li>
+      <li><a href="">liga 3</a></li>
     </ul>
-</nav>
+  </nav>
 </body>
+
 </html>
