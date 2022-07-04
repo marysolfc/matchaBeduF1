@@ -183,3 +183,31 @@
 .texto-boton:hover{
     background-color: $light-green;
 }
+
+// animacion
+
+.logo img{
+    position: relative;
+    animation-name: mianimacion;
+    animation-duration: 4s;   
+    animation-timing-function: linear;
+    animation-iteration-count: 5; 
+}
+
+@keyframes mianimacion {
+    0%{
+        rotate: 0;
+    }
+    25%{
+        rotate:45deg;
+    }
+    50%{
+        rotate: 90deg;
+    }
+    75%{
+        rotate: 135deg;
+    }
+    100%{
+        rotate: 180deg;
+    }
+}
