@@ -71,6 +71,9 @@ Fuentes
   height: 630px;
   max-height: 100%;
 }
+.blog .card-text a {
+  text-decoration: underline;
+}
 
 .trymatcha {
   background-color: #a1d683;
@@ -143,6 +146,10 @@ Fuentes
 .tryfree h6 {
   width: 350px;
   color: #b3cbcd;
+}
+
+.texto-boton:hover {
+  background-color: #67b54b;
 }
 
 /*# sourceMappingURL=output.css.map */
