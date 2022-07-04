@@ -131,17 +131,17 @@ input[placeholder] {
   text-align: center;
 }
 
-.main form>* {
+form>* {
   margin: 10px 0;
   height: 50px;
 }
 
-.main form input {
+form input {
   border-radius: 5px 0 0 5px;
   border: 1px solid #aaa;
 }
 
-.main form button {
+form button {
   border-radius: 0 5px 5px 0;
   padding: 0 10px;
 }

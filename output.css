@@ -67,5 +67,82 @@ Fuentes
   font-size: 12px;
   color: #4a4a4a;
 }
+.blog .card {
+  height: 630px;
+  max-height: 100%;
+}
+
+.trymatcha {
+  background-color: #a1d683;
+  margin-top: 50px;
+}
+.trymatcha > * {
+  text-align: center;
+}
+.trymatcha h1 {
+  padding-top: 50px;
+}
+.trymatcha p {
+  color: #fff;
+  font-size: 14px;
+  width: 320px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+.trymatcha form {
+  font-size: 0;
+}
+.trymatcha form > div > input {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #aaa;
+  font-size: 18px;
+  padding: 9px;
+}
+.trymatcha form > div > button {
+  border-radius: 0 8px 8px 0;
+  padding: 12px;
+  font-size: 18;
+}
+
+.tryfree {
+  margin: 0;
+  padding: 5% 10%;
+  max-width: unset;
+}
+.tryfree .row {
+  background-color: #025157;
+  border-radius: 10px;
+  padding: 5%;
+}
+.tryfree h2 {
+  color: #fff;
+  font-family: "Alegreya", serif;
+  font-size: 32px;
+  width: 320px;
+}
+.tryfree p {
+  display: inline;
+  color: #fff;
+}
+.tryfree form {
+  font-size: 0;
+}
+.tryfree form > div > input {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #979797;
+  font-size: 18px;
+  padding: 9px;
+}
+.tryfree form > div > button {
+  border-radius: 0 8px 8px 0;
+  padding: 12px;
+  font-size: 18;
+  background-color: #67b54b;
+}
+.tryfree h6 {
+  width: 350px;
+  color: #b3cbcd;
+}
 
 /*# sourceMappingURL=output.css.map */
