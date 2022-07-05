@@ -153,11 +153,16 @@ Fuentes
 }
 
 .logo img {
-  position: relative;
   animation-name: mianimacion;
   animation-duration: 4s;
   animation-timing-function: linear;
-  animation-iteration-count: 5;
+  animation-iteration-count: 2;
+  /*
+      animation-name: mianimacion;
+      animation-duration: 4s;   
+      animation-timing-function: linear;
+      animation-iteration-count: 5; 
+      */
 }
 
 @keyframes mianimacion {
