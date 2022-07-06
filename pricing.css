@@ -108,10 +108,10 @@ body {
   
   .actions button {
     background-color: #67b54b;
-    padding: 5px 12px;
+    padding: 12px 14px;
     border-radius: 5px;
-    font-size: 14px;
-    font-weight: 200;
+    font-size: 16px;
+    font-weight: 600;
   }
   
   .logo>img{

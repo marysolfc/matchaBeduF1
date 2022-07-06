@@ -1,0 +1,119 @@
+@use 'global' as *;
+
+body {
+    background-color: $body-white;
+}
+
+.navbar {
+    text-align: center;
+    color: $dark-green-title;
+    font-weight: 500;
+    background-color: $body-white;
+
+    & .logo {
+        width: 15%;
+
+        & img {
+            width: 25%;
+        }
+    }
+
+    & li {
+        display: inline;
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    & .actions {
+        text-align: right;
+        font-size: 14px;
+        font-weight: 600;
+
+        &>* {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        & button {
+            color: $white;
+            background-color: $light-green;
+            padding: 12px 14px;
+            border-style: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        & a {
+            color: $light-green;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.top-features {
+    margin-top: 150px;
+    text-align: center;
+
+    .title {
+        @extend %base-title;
+    }
+
+    .feature-cards img {
+        border: 1px solid $border-light-grey;
+        border-radius: 8px;
+    }
+
+    p {
+        color: $dark-grey-title;
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    h3 {
+        color: $dark-grey-title;
+        transition: color .3s ease-in-out;
+        text-shadow: $dark-green-title 1px 1px 2px;
+        transition: font-size .5s linear;
+
+        &:hover {
+            color: $light-green;
+            font-size: 30px;
+        }
+    }
+
+    .flecha {
+        position: relative;
+
+        animation: {
+            name: flechita;
+            duration: 2s;
+            timing-function: linear;
+            iteration-count: infinite;
+            direction: alternate;
+        }
+
+        img {
+            width: 20%;
+            rotate: -90deg;
+        }
+    }
+}
+
+@keyframes flechita {
+    0% {        top: 0; }
+    25% {        top: 15px; }
+    50% {        top: 30px;  }
+    75% {        top: 45px;  }
+    100% {        top: 60px;    }
+}
+
+@keyframes lados {
+    from {left: -270px;}
+    to {left: 270px;}
+  }

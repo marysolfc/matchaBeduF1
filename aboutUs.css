@@ -1,0 +1,118 @@
+/**
+Fuentes
+*/
+.top-features .title {
+  font-family: "Alegreya", serif;
+  color: #135359;
+}
+
+body {
+  background-color: #fffbf7;
+}
+
+.navbar {
+  text-align: center;
+  color: #025157;
+  font-weight: 500;
+  background-color: #fffbf7;
+}
+.navbar .logo {
+  width: 15%;
+}
+.navbar .logo img {
+  width: 25%;
+}
+.navbar li {
+  display: inline;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.navbar .actions {
+  text-align: right;
+  font-size: 14px;
+  font-weight: 600;
+}
+.navbar .actions > * {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.navbar .actions button {
+  color: #fff;
+  background-color: #67b54b;
+  padding: 12px 14px;
+  border-style: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.navbar .actions a {
+  color: #67b54b;
+  text-decoration: none;
+}
+
+.top-features {
+  margin-top: 150px;
+  text-align: center;
+}
+.top-features .feature-cards img {
+  border: 1px solid #dadada;
+  border-radius: 8px;
+}
+.top-features p {
+  color: #4a4a4a;
+  font-size: 18px;
+  font-weight: 500;
+}
+.top-features a {
+  text-decoration: none;
+}
+.top-features h3 {
+  color: #4a4a4a;
+  transition: color 0.3s ease-in-out;
+  text-shadow: #025157 1px 1px 2px;
+  transition: font-size 0.5s linear;
+}
+.top-features h3:hover {
+  color: #67b54b;
+  font-size: 30px;
+}
+.top-features .flecha {
+  position: relative;
+  animation-name: flechita;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.top-features .flecha img {
+  width: 20%;
+  rotate: -90deg;
+}
+
+@keyframes flechita {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: 15px;
+  }
+  50% {
+    top: 30px;
+  }
+  75% {
+    top: 45px;
+  }
+  100% {
+    top: 60px;
+  }
+}
+@keyframes lados {
+  from {
+    left: -270px;
+  }
+  to {
+    left: 270px;
+  }
+}
+
+/*# sourceMappingURL=aboutUs.css.map */
