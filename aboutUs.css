@@ -79,7 +79,7 @@ body {
 .top-features .flecha {
   position: relative;
   animation-name: flechita;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;

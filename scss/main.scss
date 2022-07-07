@@ -40,17 +40,20 @@
                     height: 100%;
                 }
             }
-        }
-
-        button {
-            height: auto;
-            border-radius: 8px;
-            padding: 12px;
-            width: 180px;
-            margin-bottom: 15px;
-        }
+        }        
     }
-
+   & button {
+        color: $white;
+        background-color: $dark-green-title;
+        padding: 12px;
+        border-style: none;            
+        font-size: 16px;
+        font-weight: 600;
+        height: auto;
+        border-radius: 8px;
+        width: 180px;
+        margin-bottom: 15px;
+      }
     .card-title {
         color: $dark-grey-title;
         font-size: 24px;
@@ -180,9 +183,9 @@
 }
 
 // Sesion 8: Prework- Transiciones y animaciones
-.texto-boton:hover{
-    background-color: $light-green;
-}
+// .texto-boton:hover{
+//     background-color: $light-green;
+// }
 
 // animacion
 
